@@ -1,0 +1,2 @@
+# The .vi files should be treated as a binary files
+*.vi binary
