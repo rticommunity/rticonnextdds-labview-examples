@@ -2,6 +2,8 @@
  Example Code -- Car Simulator
 ===========================================
 
+Applies to RTI Connext DDS Toolkit for LabVIEW 1.3.2.93 and above.
+
 Example Description
 ===================
 This example shows how the Readers and Writers can work together simulating a
