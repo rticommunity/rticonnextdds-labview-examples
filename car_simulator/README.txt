@@ -2,7 +2,7 @@
  Example Code -- Car Simulator
 ===========================================
 
-Applies to RTI Connext DDS Toolkit for LabVIEW 1.3.2.93 and above.
+Applies to RTI Connext DDS Toolkit for LabVIEW 1.3.1.92 and above.
 
 Example Description
 ===================
