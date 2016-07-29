@@ -1,2 +1,4 @@
 # The .vi files should be treated as a binary files
 *.vi binary
+*.pem binary
+*.p7s binary
