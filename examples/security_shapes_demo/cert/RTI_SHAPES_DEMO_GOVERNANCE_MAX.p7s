@@ -1,0 +1,71 @@
+MIME-Version: 1.0
+Content-Type: multipart/signed; protocol="application/x-pkcs7-signature"; micalg="sha-256"; boundary="----FD5266B014DBB55CC25C047B0A9EF2B4"
+
+This is an S/MIME signed message
+
+------FD5266B014DBB55CC25C047B0A9EF2B4
+Content-Type: text/plain
+
+<?xml version="1.0" encoding="UTF-8"?>
+<dds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema/dds_security_governance.xsd">
+    <domain_access_rules>
+        <domain_rule>
+            <domain_id>*</domain_id>
+            <allow_unauthenticated_join>FALSE</allow_unauthenticated_join>
+            <enable_join_access_control>TRUE</enable_join_access_control>
+            <discovery_protection_kind>ENCRYPT</discovery_protection_kind>
+            <liveliness_protection_kind>ENCRYPT</liveliness_protection_kind>
+            <rtps_protection_kind>SIGN</rtps_protection_kind>
+            <topic_access_rules>
+                <topic_rule>
+                    <topic_expression>Circle*</topic_expression>
+                    <enable_discovery_protection>FALSE</enable_discovery_protection>
+                    <enable_read_access_control>FALSE</enable_read_access_control>
+                    <enable_write_access_control>FALSE</enable_write_access_control>
+                    <metadata_protection_kind>NONE</metadata_protection_kind>
+                    <data_protection_kind>NONE</data_protection_kind>
+                </topic_rule>
+                <topic_rule>
+                    <topic_expression>*</topic_expression>
+                    <enable_discovery_protection>TRUE</enable_discovery_protection>
+                    <enable_read_access_control>TRUE</enable_read_access_control>
+                    <enable_write_access_control>TRUE</enable_write_access_control>
+                    <metadata_protection_kind>ENCRYPT</metadata_protection_kind>
+                    <data_protection_kind>ENCRYPT</data_protection_kind>
+                </topic_rule>
+            </topic_access_rules>
+        </domain_rule>
+    </domain_access_rules>
+</dds>
+
+------FD5266B014DBB55CC25C047B0A9EF2B4
+Content-Type: application/x-pkcs7-signature; name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIIEEgYJKoZIhvcNAQcCoIIEAzCCA/8CAQExDzANBglghkgBZQMEAgEFADALBgkq
+hkiG9w0BBwGgggH0MIIB8DCCAZgCCQCrTdX/pSOhqDAKBggqhkjOPQQDAjCBgDEL
+MAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRQwEgYDVQQHDAtTYW50YSBDbGFyYTEe
+MBwGA1UECgwVUmVhbCBUaW1lIElubm92YXRpb25zMQ8wDQYDVQQDDAZSVEkgQ0Ex
+HTAbBgkqhkiG9w0BCQEWDnNlY3VyZUBydGkuY29tMB4XDTE2MDcwMTAzMTQzMloX
+DTE5MDcwMTAzMTQzMlowgYAxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJDQTEUMBIG
+A1UEBwwLU2FudGEgQ2xhcmExHjAcBgNVBAoMFVJlYWwgVGltZSBJbm5vdmF0aW9u
+czEPMA0GA1UEAwwGUlRJIENBMR0wGwYJKoZIhvcNAQkBFg5zZWN1cmVAcnRpLmNv
+bTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHs+jmjr6jSMPXZsYhxew3wDTkcG
+1tSOpimGQ8U4LvecuuQSc8REQI0XhQ3IQZP3NMX2bYNgGqL9iiyaF/dOTOwwCgYI
+KoZIzj0EAwIDRgAwQwIfQYIJZruGDipfbDiFPq+VnnLaCHhWIGDSgrvxH4JVtgIg
+CE1+MYNGTKhbKQmFus4L74Cvp1UJdsTvez5/Qy6V8rAxggHiMIIB3gIBATCBjjCB
+gDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRQwEgYDVQQHDAtTYW50YSBDbGFy
+YTEeMBwGA1UECgwVUmVhbCBUaW1lIElubm92YXRpb25zMQ8wDQYDVQQDDAZSVEkg
+Q0ExHTAbBgkqhkiG9w0BCQEWDnNlY3VyZUBydGkuY29tAgkAq03V/6UjoagwDQYJ
+YIZIAWUDBAIBBQCggeQwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG
+9w0BCQUxDxcNMTYwNzAxMDMxNjI3WjAvBgkqhkiG9w0BCQQxIgQgWeedw9+lT6lS
+ASzOAWHHzIZ42fxIYA+AAHba3zImBMkweQYJKoZIhvcNAQkPMWwwajALBglghkgB
+ZQMEASowCwYJYIZIAWUDBAEWMAsGCWCGSAFlAwQBAjAKBggqhkiG9w0DBzAOBggq
+hkiG9w0DAgICAIAwDQYIKoZIhvcNAwICAUAwBwYFKw4DAgcwDQYIKoZIhvcNAwIC
+ASgwCgYIKoZIzj0EAwIERjBEAiBdU59l4LAWwYi43oQyKMT8O0JtX1AngN+jm47r
+UgCnFwIgS6GMpx2ua0m/pOAQUP1k1A9N1URHRZ9r/WuG9jbCl8M=
+
+------FD5266B014DBB55CC25C047B0A9EF2B4--
+
